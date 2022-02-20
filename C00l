@@ -65,6 +65,7 @@ local Open = Instance.new("TextButton")
 Haxx.Name = "Haxx"
 Haxx.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Haxx.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Haxx.ResetOnSpawn = false
 
 Hax.Name = "Hax"
 Hax.Parent = Haxx
@@ -309,7 +310,7 @@ ColorGui.Parent = Settings_2
 ColorGui.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 ColorGui.BackgroundTransparency = 0.300
 ColorGui.BorderColor3 = Color3.fromRGB(60, 60, 60)
-ColorGui.Position = UDim2.new(0.00749649759, 0, 1.04071975, 0)
+ColorGui.Position = UDim2.new(0.0622584037, 0, 0.599361718, 0)
 ColorGui.Size = UDim2.new(0, 161, 0, 83)
 ColorGui.Visible = false
 
@@ -668,7 +669,7 @@ Open.TextWrapped = true
 
 -- Scripts:
 
-local function LKBYJ_fake_script() -- Hax.LocalScript 
+local function VXPJCB_fake_script() -- Hax.LocalScript 
 	local script = Instance.new('LocalScript', Hax)
 
 	local Plr = game.Players.LocalPlayer
@@ -682,15 +683,15 @@ local function LKBYJ_fake_script() -- Hax.LocalScript
 	]]
 	
 end
-coroutine.wrap(LKBYJ_fake_script)()
-local function WGRMZNP_fake_script() -- Hax.DragGui 
+coroutine.wrap(VXPJCB_fake_script)()
+local function TACH_fake_script() -- Hax.DragGui 
 	local script = Instance.new('LocalScript', Hax)
 
 	script.Parent.Draggable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(WGRMZNP_fake_script)()
-local function YVTOLGA_fake_script() -- Close.Open/Close 
+coroutine.wrap(TACH_fake_script)()
+local function YYZCMRI_fake_script() -- Close.Open/Close 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -703,8 +704,8 @@ local function YVTOLGA_fake_script() -- Close.Open/Close
 		script.Parent.Parent.Parent.Visible = true
 	end)
 end
-coroutine.wrap(YVTOLGA_fake_script)()
-local function BFNBQ_fake_script() -- DiamondBlock.FireServer 
+coroutine.wrap(YYZCMRI_fake_script)()
+local function BZLQQQ_fake_script() -- DiamondBlock.FireServer 
 	local script = Instance.new('LocalScript', DiamondBlock)
 
 	local lp = game.Players.LocalPlayer
@@ -716,8 +717,8 @@ local function BFNBQ_fake_script() -- DiamondBlock.FireServer
 	
 	script.Parent.Text = ""..script.Parent.Name..""
 end
-coroutine.wrap(BFNBQ_fake_script)()
-local function JNSJP_fake_script() -- Settings.Open/Close 
+coroutine.wrap(BZLQQQ_fake_script)()
+local function XCYFZZ_fake_script() -- Settings.Open/Close 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -728,8 +729,8 @@ local function JNSJP_fake_script() -- Settings.Open/Close
 		end
 	end)
 end
-coroutine.wrap(JNSJP_fake_script)()
-local function QLAHBA_fake_script() -- GalaxyBlock.FireServer 
+coroutine.wrap(XCYFZZ_fake_script)()
+local function VHMW_fake_script() -- GalaxyBlock.FireServer 
 	local script = Instance.new('LocalScript', GalaxyBlock)
 
 	local lp = game.Players.LocalPlayer
@@ -741,8 +742,8 @@ local function QLAHBA_fake_script() -- GalaxyBlock.FireServer
 	
 	script.Parent.Text = ""..script.Parent.Name..""
 end
-coroutine.wrap(QLAHBA_fake_script)()
-local function ULVW_fake_script() -- RainbowBlock.FireServer 
+coroutine.wrap(VHMW_fake_script)()
+local function TJEGVXH_fake_script() -- RainbowBlock.FireServer 
 	local script = Instance.new('LocalScript', RainbowBlock)
 
 	local lp = game.Players.LocalPlayer
@@ -754,8 +755,8 @@ local function ULVW_fake_script() -- RainbowBlock.FireServer
 	
 	script.Parent.Text = ""..script.Parent.Name..""
 end
-coroutine.wrap(ULVW_fake_script)()
-local function CLQXLJG_fake_script() -- SuperBlock.FireServer 
+coroutine.wrap(TJEGVXH_fake_script)()
+local function QUYQXZD_fake_script() -- SuperBlock.FireServer 
 	local script = Instance.new('LocalScript', SuperBlock)
 
 	local lp = game.Players.LocalPlayer
@@ -767,8 +768,8 @@ local function CLQXLJG_fake_script() -- SuperBlock.FireServer
 	
 	script.Parent.Text = ""..script.Parent.Name..""
 end
-coroutine.wrap(CLQXLJG_fake_script)()
-local function OXOSL_fake_script() -- LuckyBlock.FireServer 
+coroutine.wrap(QUYQXZD_fake_script)()
+local function DKRYM_fake_script() -- LuckyBlock.FireServer 
 	local script = Instance.new('LocalScript', LuckyBlock)
 
 	local lp = game.Players.LocalPlayer
@@ -780,8 +781,8 @@ local function OXOSL_fake_script() -- LuckyBlock.FireServer
 	
 	script.Parent.Text = ""..script.Parent.Name..""
 end
-coroutine.wrap(OXOSL_fake_script)()
-local function ABSVFR_fake_script() -- ThemeButton.ThemeScript 
+coroutine.wrap(DKRYM_fake_script)()
+local function ZRWLO_fake_script() -- ThemeButton.ThemeScript 
 	local script = Instance.new('LocalScript', ThemeButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -791,8 +792,8 @@ local function ABSVFR_fake_script() -- ThemeButton.ThemeScript
 		script.Parent.Parent.Parent.ColorGui.Color.Image = "https://www.roblox.com/asset-thumbnail/image?assetId="..script.Parent.Parent.ThemeID.Text.."&width=420&height=420&format=png"
 	end)
 end
-coroutine.wrap(ABSVFR_fake_script)()
-local function HOSODH_fake_script() -- TransparencyButton.TransparencyScript 
+coroutine.wrap(ZRWLO_fake_script)()
+local function COQIM_fake_script() -- TransparencyButton.TransparencyScript 
 	local script = Instance.new('LocalScript', TransparencyButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -805,8 +806,8 @@ local function HOSODH_fake_script() -- TransparencyButton.TransparencyScript
 		script.Parent.Parent.Parent.Parent.Parent.Img.Open.BackgroundTransparency = ""..script.Parent.Parent.ID.Text..""
 	end)
 end
-coroutine.wrap(HOSODH_fake_script)()
-local function GUHTYKR_fake_script() -- TextColor.ThemeScript 
+coroutine.wrap(COQIM_fake_script)()
+local function VODJ_fake_script() -- TextColor.ThemeScript 
 	local script = Instance.new('LocalScript', TextColor)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -817,8 +818,8 @@ local function GUHTYKR_fake_script() -- TextColor.ThemeScript
 		end
 	end)
 end
-coroutine.wrap(GUHTYKR_fake_script)()
-local function QONRK_fake_script() -- SetTextTransparencyButton.Transparency 
+coroutine.wrap(VODJ_fake_script)()
+local function JUOJA_fake_script() -- SetTextTransparencyButton.Transparency 
 	local script = Instance.new('LocalScript', SetTextTransparencyButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -829,8 +830,8 @@ local function QONRK_fake_script() -- SetTextTransparencyButton.Transparency
 	 end
 	end)
 end
-coroutine.wrap(QONRK_fake_script)()
-local function RHWHKS_fake_script() -- a.SetColor 
+coroutine.wrap(JUOJA_fake_script)()
+local function SSYDW_fake_script() -- a.SetColor 
 	local script = Instance.new('LocalScript', a)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -841,8 +842,8 @@ local function RHWHKS_fake_script() -- a.SetColor
 		end
 	end)
 end
-coroutine.wrap(RHWHKS_fake_script)()
-local function GCXCYD_fake_script() -- b.SetColor 
+coroutine.wrap(SSYDW_fake_script)()
+local function SMIZ_fake_script() -- b.SetColor 
 	local script = Instance.new('LocalScript', b)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -853,8 +854,8 @@ local function GCXCYD_fake_script() -- b.SetColor
 		end
 	end)
 end
-coroutine.wrap(GCXCYD_fake_script)()
-local function DJNUX_fake_script() -- c.SetColor 
+coroutine.wrap(SMIZ_fake_script)()
+local function BSOUW_fake_script() -- c.SetColor 
 	local script = Instance.new('LocalScript', c)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -865,8 +866,8 @@ local function DJNUX_fake_script() -- c.SetColor
 		end
 	end)
 end
-coroutine.wrap(DJNUX_fake_script)()
-local function PLSYQ_fake_script() -- d.SetColor 
+coroutine.wrap(BSOUW_fake_script)()
+local function QUYPT_fake_script() -- d.SetColor 
 	local script = Instance.new('LocalScript', d)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -877,8 +878,8 @@ local function PLSYQ_fake_script() -- d.SetColor
 		end
 	end)
 end
-coroutine.wrap(PLSYQ_fake_script)()
-local function ZFYU_fake_script() -- e.SetColor 
+coroutine.wrap(QUYPT_fake_script)()
+local function PKSO_fake_script() -- e.SetColor 
 	local script = Instance.new('LocalScript', e)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -889,8 +890,8 @@ local function ZFYU_fake_script() -- e.SetColor
 		end
 	end)
 end
-coroutine.wrap(ZFYU_fake_script)()
-local function VMRLX_fake_script() -- a_2.SetColor 
+coroutine.wrap(PKSO_fake_script)()
+local function WROALC_fake_script() -- a_2.SetColor 
 	local script = Instance.new('LocalScript', a_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -901,8 +902,8 @@ local function VMRLX_fake_script() -- a_2.SetColor
 		end
 	end)
 end
-coroutine.wrap(VMRLX_fake_script)()
-local function RORLH_fake_script() -- b_2.SetColor 
+coroutine.wrap(WROALC_fake_script)()
+local function WACIQFT_fake_script() -- b_2.SetColor 
 	local script = Instance.new('LocalScript', b_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -913,8 +914,8 @@ local function RORLH_fake_script() -- b_2.SetColor
 		end
 	end)
 end
-coroutine.wrap(RORLH_fake_script)()
-local function JKOT_fake_script() -- c_2.SetColor 
+coroutine.wrap(WACIQFT_fake_script)()
+local function JUBEJR_fake_script() -- c_2.SetColor 
 	local script = Instance.new('LocalScript', c_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -925,8 +926,8 @@ local function JKOT_fake_script() -- c_2.SetColor
 		end
 	end)
 end
-coroutine.wrap(JKOT_fake_script)()
-local function BWTZXDH_fake_script() -- d_2.SetColor 
+coroutine.wrap(JUBEJR_fake_script)()
+local function GEKGISX_fake_script() -- d_2.SetColor 
 	local script = Instance.new('LocalScript', d_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -937,8 +938,8 @@ local function BWTZXDH_fake_script() -- d_2.SetColor
 		end
 	end)
 end
-coroutine.wrap(BWTZXDH_fake_script)()
-local function CGJRLAD_fake_script() -- e_2.SetColor 
+coroutine.wrap(GEKGISX_fake_script)()
+local function RUFBNJK_fake_script() -- e_2.SetColor 
 	local script = Instance.new('LocalScript', e_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -949,8 +950,8 @@ local function CGJRLAD_fake_script() -- e_2.SetColor
 		end
 	end)
 end
-coroutine.wrap(CGJRLAD_fake_script)()
-local function TMRV_fake_script() -- a_3.SetColor 
+coroutine.wrap(RUFBNJK_fake_script)()
+local function WWBC_fake_script() -- a_3.SetColor 
 	local script = Instance.new('LocalScript', a_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -961,8 +962,8 @@ local function TMRV_fake_script() -- a_3.SetColor
 		end
 	end)
 end
-coroutine.wrap(TMRV_fake_script)()
-local function QUEKP_fake_script() -- b_3.SetColor 
+coroutine.wrap(WWBC_fake_script)()
+local function RTZBD_fake_script() -- b_3.SetColor 
 	local script = Instance.new('LocalScript', b_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -973,8 +974,8 @@ local function QUEKP_fake_script() -- b_3.SetColor
 		end
 	end)
 end
-coroutine.wrap(QUEKP_fake_script)()
-local function LQAE_fake_script() -- c_3.SetColor 
+coroutine.wrap(RTZBD_fake_script)()
+local function PDAL_fake_script() -- c_3.SetColor 
 	local script = Instance.new('LocalScript', c_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -985,8 +986,8 @@ local function LQAE_fake_script() -- c_3.SetColor
 		end
 	end)
 end
-coroutine.wrap(LQAE_fake_script)()
-local function OIBGA_fake_script() -- d_3.SetColor 
+coroutine.wrap(PDAL_fake_script)()
+local function KSHOC_fake_script() -- d_3.SetColor 
 	local script = Instance.new('LocalScript', d_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -997,8 +998,8 @@ local function OIBGA_fake_script() -- d_3.SetColor
 		end
 	end)
 end
-coroutine.wrap(OIBGA_fake_script)()
-local function BGCEAD_fake_script() -- e_3.SetColor 
+coroutine.wrap(KSHOC_fake_script)()
+local function COOTSBJ_fake_script() -- e_3.SetColor 
 	local script = Instance.new('LocalScript', e_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1009,8 +1010,8 @@ local function BGCEAD_fake_script() -- e_3.SetColor
 		end
 	end)
 end
-coroutine.wrap(BGCEAD_fake_script)()
-local function QCDEBE_fake_script() -- a_4.SetColor 
+coroutine.wrap(COOTSBJ_fake_script)()
+local function YXHQSH_fake_script() -- a_4.SetColor 
 	local script = Instance.new('LocalScript', a_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1021,8 +1022,8 @@ local function QCDEBE_fake_script() -- a_4.SetColor
 		end
 	end)
 end
-coroutine.wrap(QCDEBE_fake_script)()
-local function XUVEPHI_fake_script() -- b_4.SetColor 
+coroutine.wrap(YXHQSH_fake_script)()
+local function ZDGM_fake_script() -- b_4.SetColor 
 	local script = Instance.new('LocalScript', b_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1033,8 +1034,8 @@ local function XUVEPHI_fake_script() -- b_4.SetColor
 		end
 	end)
 end
-coroutine.wrap(XUVEPHI_fake_script)()
-local function DKSYRXM_fake_script() -- c_4.SetColor 
+coroutine.wrap(ZDGM_fake_script)()
+local function NYYM_fake_script() -- c_4.SetColor 
 	local script = Instance.new('LocalScript', c_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1045,8 +1046,8 @@ local function DKSYRXM_fake_script() -- c_4.SetColor
 		end
 	end)
 end
-coroutine.wrap(DKSYRXM_fake_script)()
-local function XTHQY_fake_script() -- d_4.SetColor 
+coroutine.wrap(NYYM_fake_script)()
+local function MCBNAIV_fake_script() -- d_4.SetColor 
 	local script = Instance.new('LocalScript', d_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1057,8 +1058,8 @@ local function XTHQY_fake_script() -- d_4.SetColor
 		end
 	end)
 end
-coroutine.wrap(XTHQY_fake_script)()
-local function ICFUSO_fake_script() -- e_4.SetColor 
+coroutine.wrap(MCBNAIV_fake_script)()
+local function BLDEX_fake_script() -- e_4.SetColor 
 	local script = Instance.new('LocalScript', e_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1069,8 +1070,8 @@ local function ICFUSO_fake_script() -- e_4.SetColor
 		end
 	end)
 end
-coroutine.wrap(ICFUSO_fake_script)()
-local function VFGUNK_fake_script() -- a_5.SetColor 
+coroutine.wrap(BLDEX_fake_script)()
+local function SZDH_fake_script() -- a_5.SetColor 
 	local script = Instance.new('LocalScript', a_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1081,8 +1082,8 @@ local function VFGUNK_fake_script() -- a_5.SetColor
 		end
 	end)
 end
-coroutine.wrap(VFGUNK_fake_script)()
-local function HWHT_fake_script() -- b_5.SetColor 
+coroutine.wrap(SZDH_fake_script)()
+local function PBWBI_fake_script() -- b_5.SetColor 
 	local script = Instance.new('LocalScript', b_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1093,8 +1094,8 @@ local function HWHT_fake_script() -- b_5.SetColor
 		end
 	end)
 end
-coroutine.wrap(HWHT_fake_script)()
-local function LZTR_fake_script() -- c_5.SetColor 
+coroutine.wrap(PBWBI_fake_script)()
+local function QZRSZTM_fake_script() -- c_5.SetColor 
 	local script = Instance.new('LocalScript', c_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1105,8 +1106,8 @@ local function LZTR_fake_script() -- c_5.SetColor
 		end
 	end)
 end
-coroutine.wrap(LZTR_fake_script)()
-local function TECCJG_fake_script() -- d_5.SetColor 
+coroutine.wrap(QZRSZTM_fake_script)()
+local function TACC_fake_script() -- d_5.SetColor 
 	local script = Instance.new('LocalScript', d_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1117,8 +1118,8 @@ local function TECCJG_fake_script() -- d_5.SetColor
 		end
 	end)
 end
-coroutine.wrap(TECCJG_fake_script)()
-local function AGJVK_fake_script() -- e_5.SetColor 
+coroutine.wrap(TACC_fake_script)()
+local function PEUKPW_fake_script() -- e_5.SetColor 
 	local script = Instance.new('LocalScript', e_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1129,4 +1130,4 @@ local function AGJVK_fake_script() -- e_5.SetColor
 		end
 	end)
 end
-coroutine.wrap(AGJVK_fake_script)()
+coroutine.wrap(PEUKPW_fake_script)()
