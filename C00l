@@ -21,6 +21,39 @@ local ID = Instance.new("TextBox")
 local ThemeID = Instance.new("TextBox")
 local ThemeButton = Instance.new("TextButton")
 local TransparencyButton = Instance.new("TextButton")
+local TextColor = Instance.new("TextButton")
+local ColorGui = Instance.new("Frame")
+local Color = Instance.new("ImageLabel")
+local highmid = Instance.new("Frame")
+local a = Instance.new("TextButton")
+local b = Instance.new("TextButton")
+local c = Instance.new("TextButton")
+local d = Instance.new("TextButton")
+local e = Instance.new("TextButton")
+local light = Instance.new("Frame")
+local a_2 = Instance.new("TextButton")
+local b_2 = Instance.new("TextButton")
+local c_2 = Instance.new("TextButton")
+local d_2 = Instance.new("TextButton")
+local e_2 = Instance.new("TextButton")
+local random = Instance.new("Frame")
+local a_3 = Instance.new("TextButton")
+local b_3 = Instance.new("TextButton")
+local c_3 = Instance.new("TextButton")
+local d_3 = Instance.new("TextButton")
+local e_3 = Instance.new("TextButton")
+local mid = Instance.new("Frame")
+local a_4 = Instance.new("TextButton")
+local b_4 = Instance.new("TextButton")
+local c_4 = Instance.new("TextButton")
+local d_4 = Instance.new("TextButton")
+local e_4 = Instance.new("TextButton")
+local dark = Instance.new("Frame")
+local a_5 = Instance.new("TextButton")
+local b_5 = Instance.new("TextButton")
+local c_5 = Instance.new("TextButton")
+local d_5 = Instance.new("TextButton")
+local e_5 = Instance.new("TextButton")
 local Hover = Instance.new("TextLabel")
 local Img_3 = Instance.new("ImageLabel")
 local Open = Instance.new("TextButton")
@@ -64,7 +97,7 @@ DiamondBlock.Name = "Diamond Block"
 DiamondBlock.Parent = Img
 DiamondBlock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DiamondBlock.BackgroundTransparency = 1.000
-DiamondBlock.Position = UDim2.new(0, 0, 7.4505806e-09, 0)
+DiamondBlock.Position = UDim2.new(0.0215633418, 0, 7.4505806e-09, 0)
 DiamondBlock.Size = UDim2.new(0, 155, 0, 50)
 DiamondBlock.Font = Enum.Font.SourceSans
 DiamondBlock.Text = "..."
@@ -90,7 +123,7 @@ GalaxyBlock.Name = "Galaxy Block"
 GalaxyBlock.Parent = Img
 GalaxyBlock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 GalaxyBlock.BackgroundTransparency = 1.000
-GalaxyBlock.Position = UDim2.new(0, 0, 0.206790119, 0)
+GalaxyBlock.Position = UDim2.new(0.0215633418, 0, 0.206790119, 0)
 GalaxyBlock.Size = UDim2.new(0, 155, 0, 50)
 GalaxyBlock.Font = Enum.Font.SourceSans
 GalaxyBlock.Text = "..."
@@ -129,7 +162,7 @@ LuckBlock.Name = "Luck Block"
 LuckBlock.Parent = Img
 LuckBlock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 LuckBlock.BackgroundTransparency = 1.000
-LuckBlock.Position = UDim2.new(0, 0, 0.422839493, 0)
+LuckBlock.Position = UDim2.new(0.0215633418, 0, 0.422839493, 0)
 LuckBlock.Size = UDim2.new(0, 155, 0, 50)
 LuckBlock.Font = Enum.Font.SourceSans
 LuckBlock.Text = "..."
@@ -177,7 +210,7 @@ Img_2.Name = "Img"
 Img_2.Parent = Settings_2
 Img_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Img_2.BackgroundTransparency = 1.000
-Img_2.Size = UDim2.new(0, 419, 0, 200)
+Img_2.Size = UDim2.new(0, 419, 0, 324)
 Img_2.Image = "rbxassetid://0"
 
 ID.Name = "ID"
@@ -186,7 +219,7 @@ ID.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ID.BackgroundTransparency = 1.000
 ID.Size = UDim2.new(0, 202, 0, 50)
 ID.Font = Enum.Font.SourceSans
-ID.Text = "Enter Here Gui Transparency"
+ID.Text = "Enter Here Transparency Number!"
 ID.TextColor3 = Color3.fromRGB(255, 255, 255)
 ID.TextScaled = true
 ID.TextSize = 14.000
@@ -209,7 +242,7 @@ ThemeButton.Name = "ThemeButton"
 ThemeButton.Parent = Img_2
 ThemeButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ThemeButton.BackgroundTransparency = 1.000
-ThemeButton.Position = UDim2.new(0.523710489, 0, 0.375, 0)
+ThemeButton.Position = UDim2.new(0.52132386, 0, 0.229938269, 0)
 ThemeButton.Size = UDim2.new(0, 200, 0, 50)
 ThemeButton.Font = Enum.Font.SourceSans
 ThemeButton.Text = "Set Theme"
@@ -222,7 +255,7 @@ TransparencyButton.Name = "TransparencyButton"
 TransparencyButton.Parent = Img_2
 TransparencyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TransparencyButton.BackgroundTransparency = 1.000
-TransparencyButton.Position = UDim2.new(0.00990098994, 0, 0.375, 0)
+TransparencyButton.Position = UDim2.new(0.00751435477, 0, 0.229938269, 0)
 TransparencyButton.Size = UDim2.new(0, 200, 0, 50)
 TransparencyButton.Font = Enum.Font.SourceSans
 TransparencyButton.Text = "Set Transparency"
@@ -230,6 +263,345 @@ TransparencyButton.TextColor3 = Color3.fromRGB(255, 255, 5255)
 TransparencyButton.TextScaled = true
 TransparencyButton.TextSize = 14.000
 TransparencyButton.TextWrapped = true
+
+TextColor.Name = "TextColor"
+TextColor.Parent = Img_2
+TextColor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextColor.BackgroundTransparency = 1.000
+TextColor.Position = UDim2.new(0.00581073761, 0, 0.421296299, 0)
+TextColor.Size = UDim2.new(0, 200, 0, 50)
+TextColor.Font = Enum.Font.SourceSans
+TextColor.Text = "Set TextColors"
+TextColor.TextColor3 = Color3.fromRGB(255, 255, 5255)
+TextColor.TextScaled = true
+TextColor.TextSize = 14.000
+TextColor.TextWrapped = true
+
+ColorGui.Name = "ColorGui"
+ColorGui.Parent = Settings_2
+ColorGui.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+ColorGui.BackgroundTransparency = 0.300
+ColorGui.BorderColor3 = Color3.fromRGB(60, 60, 60)
+ColorGui.Position = UDim2.new(0.00749649759, 0, 1.04071975, 0)
+ColorGui.Size = UDim2.new(0, 161, 0, 83)
+ColorGui.Visible = false
+
+Color.Name = "Color"
+Color.Parent = ColorGui
+Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color.BackgroundTransparency = 1.000
+Color.Size = UDim2.new(0, 161, 0, 83)
+Color.Image = "rbxassetid://0"
+
+highmid.Name = "highmid"
+highmid.Parent = Color
+highmid.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+highmid.BorderSizePixel = 0
+highmid.Position = UDim2.new(0.136008859, 80, 0.0475113094, 0)
+highmid.Size = UDim2.new(0.116959073, 0, 0.904977381, 0)
+
+a.Name = "a"
+a.Parent = highmid
+a.BackgroundColor3 = Color3.fromRGB(243, 255, 0)
+a.BorderSizePixel = 0
+a.Position = UDim2.new(-0.0223686174, 0, -0.00128959655, 0)
+a.Size = UDim2.new(1.02236831, 0, 0.201289594, 0)
+a.Font = Enum.Font.SourceSans
+a.Text = ""
+a.TextColor3 = Color3.fromRGB(0, 0, 0)
+a.TextSize = 14.000
+
+b.Name = "b"
+b.Parent = highmid
+b.BackgroundColor3 = Color3.fromRGB(193, 0, 218)
+b.BorderSizePixel = 0
+b.Position = UDim2.new(-0.0223686174, 0, 0.199705884, 0)
+b.Size = UDim2.new(1.02236831, 0, 0.200995505, 0)
+b.Font = Enum.Font.SourceSans
+b.Text = ""
+b.TextColor3 = Color3.fromRGB(0, 0, 0)
+b.TextSize = 14.000
+
+c.Name = "c"
+c.Parent = highmid
+c.BackgroundColor3 = Color3.fromRGB(130, 94, 206)
+c.BorderSizePixel = 0
+c.Position = UDim2.new(-0.0223686174, 0, 0.400701284, 0)
+c.Size = UDim2.new(1.02236378, 0, 0.20099549, 0)
+c.Font = Enum.Font.SourceSans
+c.Text = ""
+c.TextColor3 = Color3.fromRGB(0, 0, 0)
+c.TextSize = 14.000
+
+d.Name = "d"
+d.Parent = highmid
+d.BackgroundColor3 = Color3.fromRGB(207, 157, 134)
+d.BorderSizePixel = 0
+d.Position = UDim2.new(-0.022369381, 0, 0.601696789, 0)
+d.Size = UDim2.new(1.02236843, 0, 0.205995485, 0)
+d.Font = Enum.Font.SourceSans
+d.Text = ""
+d.TextColor3 = Color3.fromRGB(0, 0, 0)
+d.TextSize = 14.000
+
+e.Name = "e"
+e.Parent = highmid
+e.BackgroundColor3 = Color3.fromRGB(170, 85, 0)
+e.BorderSizePixel = 0
+e.Position = UDim2.new(-0.0223686174, 0, 0.807692289, 0)
+e.Size = UDim2.new(1.02236378, 0, 0.19230774, 0)
+e.Font = Enum.Font.SourceSans
+e.Text = ""
+e.TextColor3 = Color3.fromRGB(0, 0, 0)
+e.TextSize = 14.000
+
+light.Name = "light"
+light.Parent = Color
+light.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+light.BorderSizePixel = 0
+light.Position = UDim2.new(0.883040905, -12, 0.0475113094, 0)
+light.Size = UDim2.new(0.116959073, 0, 0.904977381, 0)
+
+a_2.Name = "a"
+a_2.Parent = light
+a_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+a_2.BorderSizePixel = 0
+a_2.Position = UDim2.new(-0.0223686174, 0, -0.00128959655, 0)
+a_2.Size = UDim2.new(1.02236831, 0, 0.201289594, 0)
+a_2.Font = Enum.Font.SourceSans
+a_2.Text = ""
+a_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+a_2.TextSize = 14.000
+
+b_2.Name = "b"
+b_2.Parent = light
+b_2.BackgroundColor3 = Color3.fromRGB(241, 241, 241)
+b_2.BorderSizePixel = 0
+b_2.Position = UDim2.new(-0.0223686174, 0, 0.199705884, 0)
+b_2.Size = UDim2.new(1.02236831, 0, 0.200995505, 0)
+b_2.Font = Enum.Font.SourceSans
+b_2.Text = ""
+b_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+b_2.TextSize = 14.000
+
+c_2.Name = "c"
+c_2.Parent = light
+c_2.BackgroundColor3 = Color3.fromRGB(229, 229, 229)
+c_2.BorderSizePixel = 0
+c_2.Position = UDim2.new(-0.0223686174, 0, 0.400701284, 0)
+c_2.Size = UDim2.new(1.02236378, 0, 0.20099549, 0)
+c_2.Font = Enum.Font.SourceSans
+c_2.Text = ""
+c_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+c_2.TextSize = 14.000
+
+d_2.Name = "d"
+d_2.Parent = light
+d_2.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+d_2.BorderSizePixel = 0
+d_2.Position = UDim2.new(-0.022369381, 0, 0.601696789, 0)
+d_2.Size = UDim2.new(1.02236843, 0, 0.205995485, 0)
+d_2.Font = Enum.Font.SourceSans
+d_2.Text = ""
+d_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+d_2.TextSize = 14.000
+
+e_2.Name = "e"
+e_2.Parent = light
+e_2.BackgroundColor3 = Color3.fromRGB(168, 168, 168)
+e_2.BorderSizePixel = 0
+e_2.Position = UDim2.new(-0.0223686174, 0, 0.807692289, 0)
+e_2.Size = UDim2.new(1.02236378, 0, 0.19230774, 0)
+e_2.Font = Enum.Font.SourceSans
+e_2.Text = ""
+e_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+e_2.TextSize = 14.000
+
+random.Name = "random"
+random.Parent = Color
+random.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+random.BorderSizePixel = 0
+random.Position = UDim2.new(0.765578687, -80, 0.0355656072, 0)
+random.Size = UDim2.new(0.116959073, 0, 0.904977381, 0)
+
+a_3.Name = "a"
+a_3.Parent = random
+a_3.BackgroundColor3 = Color3.fromRGB(0, 4, 255)
+a_3.BorderSizePixel = 0
+a_3.Position = UDim2.new(-0.0223686174, 0, -0.00128959655, 0)
+a_3.Size = UDim2.new(1.02236831, 0, 0.201289594, 0)
+a_3.Font = Enum.Font.SourceSans
+a_3.Text = ""
+a_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+a_3.TextSize = 14.000
+
+b_3.Name = "b"
+b_3.Parent = random
+b_3.BackgroundColor3 = Color3.fromRGB(0, 234, 255)
+b_3.BorderSizePixel = 0
+b_3.Position = UDim2.new(-0.0223686174, 0, 0.199705884, 0)
+b_3.Size = UDim2.new(1.02236831, 0, 0.200995505, 0)
+b_3.Font = Enum.Font.SourceSans
+b_3.Text = ""
+b_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+b_3.TextSize = 14.000
+
+c_3.Name = "c"
+c_3.Parent = random
+c_3.BackgroundColor3 = Color3.fromRGB(0, 255, 29)
+c_3.BorderSizePixel = 0
+c_3.Position = UDim2.new(-0.0223686174, 0, 0.400701284, 0)
+c_3.Size = UDim2.new(1.02236378, 0, 0.20099549, 0)
+c_3.Font = Enum.Font.SourceSans
+c_3.Text = ""
+c_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+c_3.TextSize = 14.000
+
+d_3.Name = "d"
+d_3.Parent = random
+d_3.BackgroundColor3 = Color3.fromRGB(255, 0, 200)
+d_3.BorderSizePixel = 0
+d_3.Position = UDim2.new(-0.022369381, 0, 0.601696789, 0)
+d_3.Size = UDim2.new(1.02236843, 0, 0.205995485, 0)
+d_3.Font = Enum.Font.SourceSans
+d_3.Text = ""
+d_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+d_3.TextSize = 14.000
+
+e_3.Name = "e"
+e_3.Parent = random
+e_3.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+e_3.BorderSizePixel = 0
+e_3.Position = UDim2.new(-0.0223686174, 0, 0.807692289, 0)
+e_3.Size = UDim2.new(1.02236378, 0, 0.19230774, 0)
+e_3.Font = Enum.Font.SourceSans
+e_3.Text = ""
+e_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+e_3.TextSize = 14.000
+
+mid.Name = "mid"
+mid.Parent = Color
+mid.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mid.BorderSizePixel = 0
+mid.Position = UDim2.new(0.441520452, 0, 0.0475113094, 0)
+mid.Size = UDim2.new(0.116959073, 0, 0.904977381, 0)
+
+a_4.Name = "a"
+a_4.Parent = mid
+a_4.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+a_4.BorderSizePixel = 0
+a_4.Position = UDim2.new(-0.0223686174, 0, -0.00128959655, 0)
+a_4.Size = UDim2.new(1.02236831, 0, 0.201289594, 0)
+a_4.Font = Enum.Font.SourceSans
+a_4.Text = ""
+a_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+a_4.TextSize = 14.000
+
+b_4.Name = "b"
+b_4.Parent = mid
+b_4.BackgroundColor3 = Color3.fromRGB(255, 170, 127)
+b_4.BorderSizePixel = 0
+b_4.Position = UDim2.new(-0.0223686174, 0, 0.199705884, 0)
+b_4.Size = UDim2.new(1.02236831, 0, 0.200995505, 0)
+b_4.Font = Enum.Font.SourceSans
+b_4.Text = ""
+b_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+b_4.TextSize = 14.000
+
+c_4.Name = "c"
+c_4.Parent = mid
+c_4.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+c_4.BorderSizePixel = 0
+c_4.Position = UDim2.new(-0.0223686174, 0, 0.400701284, 0)
+c_4.Size = UDim2.new(1.02236378, 0, 0.20099549, 0)
+c_4.Font = Enum.Font.SourceSans
+c_4.Text = ""
+c_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+c_4.TextSize = 14.000
+
+d_4.Name = "d"
+d_4.Parent = mid
+d_4.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+d_4.BorderSizePixel = 0
+d_4.Position = UDim2.new(-0.022369381, 0, 0.601696789, 0)
+d_4.Size = UDim2.new(1.02236843, 0, 0.205995485, 0)
+d_4.Font = Enum.Font.SourceSans
+d_4.Text = ""
+d_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+d_4.TextSize = 14.000
+
+e_4.Name = "e"
+e_4.Parent = mid
+e_4.BackgroundColor3 = Color3.fromRGB(170, 255, 127)
+e_4.BorderSizePixel = 0
+e_4.Position = UDim2.new(-0.0223686174, 0, 0.807692289, 0)
+e_4.Size = UDim2.new(1.02236378, 0, 0.19230774, 0)
+e_4.Font = Enum.Font.SourceSans
+e_4.Text = ""
+e_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+e_4.TextSize = 14.000
+
+dark.Name = "dark"
+dark.Parent = Color
+dark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dark.BorderSizePixel = 0
+dark.Position = UDim2.new(0, 12, 0.0475113094, 0)
+dark.Size = UDim2.new(0.116959073, 0, 0.904977381, 0)
+
+a_5.Name = "a"
+a_5.Parent = dark
+a_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+a_5.BorderSizePixel = 0
+a_5.Position = UDim2.new(-0.0223686174, 0, -0.00128959655, 0)
+a_5.Size = UDim2.new(1.02236831, 0, 0.201289594, 0)
+a_5.Font = Enum.Font.SourceSans
+a_5.Text = ""
+a_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+a_5.TextSize = 14.000
+
+b_5.Name = "b"
+b_5.Parent = dark
+b_5.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+b_5.BorderSizePixel = 0
+b_5.Position = UDim2.new(-0.0223686174, 0, 0.199705884, 0)
+b_5.Size = UDim2.new(1.02236831, 0, 0.200995505, 0)
+b_5.Font = Enum.Font.SourceSans
+b_5.Text = ""
+b_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+b_5.TextSize = 14.000
+
+c_5.Name = "c"
+c_5.Parent = dark
+c_5.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+c_5.BorderSizePixel = 0
+c_5.Position = UDim2.new(-0.0223686174, 0, 0.400701284, 0)
+c_5.Size = UDim2.new(1.02236378, 0, 0.20099549, 0)
+c_5.Font = Enum.Font.SourceSans
+c_5.Text = ""
+c_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+c_5.TextSize = 14.000
+
+d_5.Name = "d"
+d_5.Parent = dark
+d_5.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+d_5.BorderSizePixel = 0
+d_5.Position = UDim2.new(-0.022369381, 0, 0.601696789, 0)
+d_5.Size = UDim2.new(1.02236843, 0, 0.205995485, 0)
+d_5.Font = Enum.Font.SourceSans
+d_5.Text = ""
+d_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+d_5.TextSize = 14.000
+
+e_5.Name = "e"
+e_5.Parent = dark
+e_5.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+e_5.BorderSizePixel = 0
+e_5.Position = UDim2.new(-0.0223686174, 0, 0.807692289, 0)
+e_5.Size = UDim2.new(1.02236378, 0, 0.19230774, 0)
+e_5.Font = Enum.Font.SourceSans
+e_5.Text = ""
+e_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+e_5.TextSize = 14.000
 
 Hover.Name = "Hover"
 Hover.Parent = Haxx
@@ -269,7 +641,7 @@ Open.TextWrapped = true
 
 -- Scripts:
 
-local function XAETTB_fake_script() -- Hax.LocalScript 
+local function NNNKZ_fake_script() -- Hax.LocalScript 
 	local script = Instance.new('LocalScript', Hax)
 
 	local Plr = game.Players.LocalPlayer
@@ -283,15 +655,15 @@ local function XAETTB_fake_script() -- Hax.LocalScript
 	]]
 	
 end
-coroutine.wrap(XAETTB_fake_script)()
-local function ADTDEU_fake_script() -- Hax.DragGui 
+coroutine.wrap(NNNKZ_fake_script)()
+local function OVXEE_fake_script() -- Hax.DragGui 
 	local script = Instance.new('LocalScript', Hax)
 
 	script.Parent.Draggable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(ADTDEU_fake_script)()
-local function AUQWZJT_fake_script() -- Close.Open/Close 
+coroutine.wrap(OVXEE_fake_script)()
+local function TQXN_fake_script() -- Close.Open/Close 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -304,8 +676,8 @@ local function AUQWZJT_fake_script() -- Close.Open/Close
 		script.Parent.Parent.Parent.Visible = true
 	end)
 end
-coroutine.wrap(AUQWZJT_fake_script)()
-local function NUYSJV_fake_script() -- DiamondBlock.FireServer 
+coroutine.wrap(TQXN_fake_script)()
+local function OWOJV_fake_script() -- DiamondBlock.FireServer 
 	local script = Instance.new('LocalScript', DiamondBlock)
 
 	local lp = game.Players.LocalPlayer
@@ -317,8 +689,8 @@ local function NUYSJV_fake_script() -- DiamondBlock.FireServer
 	
 	script.Parent.Text = ""..script.Parent.Name..""
 end
-coroutine.wrap(NUYSJV_fake_script)()
-local function TKRND_fake_script() -- Settings.Open/Close 
+coroutine.wrap(OWOJV_fake_script)()
+local function VFEYD_fake_script() -- Settings.Open/Close 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -329,8 +701,8 @@ local function TKRND_fake_script() -- Settings.Open/Close
 		end
 	end)
 end
-coroutine.wrap(TKRND_fake_script)()
-local function JMQNBV_fake_script() -- GalaxyBlock.FireServer 
+coroutine.wrap(VFEYD_fake_script)()
+local function DMXRF_fake_script() -- GalaxyBlock.FireServer 
 	local script = Instance.new('LocalScript', GalaxyBlock)
 
 	local lp = game.Players.LocalPlayer
@@ -342,8 +714,8 @@ local function JMQNBV_fake_script() -- GalaxyBlock.FireServer
 	
 	script.Parent.Text = ""..script.Parent.Name..""
 end
-coroutine.wrap(JMQNBV_fake_script)()
-local function BUWE_fake_script() -- RainbowBlock.FireServer 
+coroutine.wrap(DMXRF_fake_script)()
+local function EUNL_fake_script() -- RainbowBlock.FireServer 
 	local script = Instance.new('LocalScript', RainbowBlock)
 
 	local lp = game.Players.LocalPlayer
@@ -355,8 +727,8 @@ local function BUWE_fake_script() -- RainbowBlock.FireServer
 	
 	script.Parent.Text = ""..script.Parent.Name..""
 end
-coroutine.wrap(BUWE_fake_script)()
-local function RTOYD_fake_script() -- SuperBlock.FireServer 
+coroutine.wrap(EUNL_fake_script)()
+local function DDBBDM_fake_script() -- SuperBlock.FireServer 
 	local script = Instance.new('LocalScript', SuperBlock)
 
 	local lp = game.Players.LocalPlayer
@@ -368,8 +740,8 @@ local function RTOYD_fake_script() -- SuperBlock.FireServer
 	
 	script.Parent.Text = ""..script.Parent.Name..""
 end
-coroutine.wrap(RTOYD_fake_script)()
-local function VHSHGB_fake_script() -- LuckBlock.FireServer 
+coroutine.wrap(DDBBDM_fake_script)()
+local function MPXEC_fake_script() -- LuckBlock.FireServer 
 	local script = Instance.new('LocalScript', LuckBlock)
 
 	local lp = game.Players.LocalPlayer
@@ -381,18 +753,19 @@ local function VHSHGB_fake_script() -- LuckBlock.FireServer
 	
 	script.Parent.Text = ""..script.Parent.Name..""
 end
-coroutine.wrap(VHSHGB_fake_script)()
-local function DPRTKV_fake_script() -- ThemeButton.ThemeScript 
+coroutine.wrap(MPXEC_fake_script)()
+local function TVLLWZG_fake_script() -- ThemeButton.ThemeScript 
 	local script = Instance.new('LocalScript', ThemeButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Img.Image = "https://www.roblox.com/asset-thumbnail/image?assetId="..script.Parent.Parent.ThemeID.Text.."&width=420&height=420&format=png"
 		script.Parent.Parent.Parent.Parent.Settings.Img.Image = "https://www.roblox.com/asset-thumbnail/image?assetId="..script.Parent.Parent.ThemeID.Text.."&width=420&height=420&format=png"
 		script.Parent.Parent.Parent.Parent.Parent.Img.Image = "https://www.roblox.com/asset-thumbnail/image?assetId="..script.Parent.Parent.ThemeID.Text.."&width=420&height=420&format=png"
+		script.Parent.Parent.Parent.ColorGui.Color.Image = "https://www.roblox.com/asset-thumbnail/image?assetId="..script.Parent.Parent.ThemeID.Text.."&width=420&height=420&format=png"
 	end)
 end
-coroutine.wrap(DPRTKV_fake_script)()
-local function UBKSK_fake_script() -- TransparencyButton.TransparencyScript 
+coroutine.wrap(TVLLWZG_fake_script)()
+local function HVFGM_fake_script() -- TransparencyButton.TransparencyScript 
 	local script = Instance.new('LocalScript', TransparencyButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -405,4 +778,316 @@ local function UBKSK_fake_script() -- TransparencyButton.TransparencyScript
 		script.Parent.Parent.Parent.Parent.Parent.Img.Open.BackgroundTransparency = ""..script.Parent.Parent.ID.Text..""
 	end)
 end
-coroutine.wrap(UBKSK_fake_script)()
+coroutine.wrap(HVFGM_fake_script)()
+local function PUTSCWC_fake_script() -- TextColor.ThemeScript 
+	local script = Instance.new('LocalScript', TextColor)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if	script.Parent.Parent.Parent.ColorGui.Visible == true then
+			script.Parent.Parent.Parent.ColorGui.Visible = false
+		else
+			script.Parent.Parent.Parent.ColorGui.Visible = true
+		end
+	end)
+end
+coroutine.wrap(PUTSCWC_fake_script)()
+local function VBKIWLB_fake_script() -- a.SetColor 
+	local script = Instance.new('LocalScript', a)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(243, 255, 0)
+			end
+		end
+	end)
+end
+coroutine.wrap(VBKIWLB_fake_script)()
+local function AMMZMH_fake_script() -- b.SetColor 
+	local script = Instance.new('LocalScript', b)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(193, 0, 218)
+			end
+		end
+	end)
+end
+coroutine.wrap(AMMZMH_fake_script)()
+local function OJUT_fake_script() -- c.SetColor 
+	local script = Instance.new('LocalScript', c)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(130, 94, 206)
+			end
+		end
+	end)
+end
+coroutine.wrap(OJUT_fake_script)()
+local function YQVMUU_fake_script() -- d.SetColor 
+	local script = Instance.new('LocalScript', d)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(207, 157, 134)
+			end
+		end
+	end)
+end
+coroutine.wrap(YQVMUU_fake_script)()
+local function MTYMAEZ_fake_script() -- e.SetColor 
+	local script = Instance.new('LocalScript', e)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(170, 85, 0)
+			end
+		end
+	end)
+end
+coroutine.wrap(MTYMAEZ_fake_script)()
+local function UKGBYEU_fake_script() -- a_2.SetColor 
+	local script = Instance.new('LocalScript', a_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(255, 255, 255)
+			end
+		end
+	end)
+end
+coroutine.wrap(UKGBYEU_fake_script)()
+local function DBZH_fake_script() -- b_2.SetColor 
+	local script = Instance.new('LocalScript', b_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(241, 241, 241)
+			end
+		end
+	end)
+end
+coroutine.wrap(DBZH_fake_script)()
+local function QEYU_fake_script() -- c_2.SetColor 
+	local script = Instance.new('LocalScript', c_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(229, 229, 229)
+			end
+		end
+	end)
+end
+coroutine.wrap(QEYU_fake_script)()
+local function JNSNLIV_fake_script() -- d_2.SetColor 
+	local script = Instance.new('LocalScript', d_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(200, 200, 200)
+			end
+		end
+	end)
+end
+coroutine.wrap(JNSNLIV_fake_script)()
+local function TKXAAMQ_fake_script() -- e_2.SetColor 
+	local script = Instance.new('LocalScript', e_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(168, 168, 168)
+			end
+		end
+	end)
+end
+coroutine.wrap(TKXAAMQ_fake_script)()
+local function GFLKUD_fake_script() -- a_3.SetColor 
+	local script = Instance.new('LocalScript', a_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(0, 4, 255)
+			end
+		end
+	end)
+end
+coroutine.wrap(GFLKUD_fake_script)()
+local function FRSIX_fake_script() -- b_3.SetColor 
+	local script = Instance.new('LocalScript', b_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(0, 234, 255)
+			end
+		end
+	end)
+end
+coroutine.wrap(FRSIX_fake_script)()
+local function YZLWRM_fake_script() -- c_3.SetColor 
+	local script = Instance.new('LocalScript', c_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(0, 255, 29)
+			end
+		end
+	end)
+end
+coroutine.wrap(YZLWRM_fake_script)()
+local function IRTVHXT_fake_script() -- d_3.SetColor 
+	local script = Instance.new('LocalScript', d_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(255, 0, 200)
+			end
+		end
+	end)
+end
+coroutine.wrap(IRTVHXT_fake_script)()
+local function OBOFZCA_fake_script() -- e_3.SetColor 
+	local script = Instance.new('LocalScript', e_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(255, 0, 4)
+			end
+		end
+	end)
+end
+coroutine.wrap(OBOFZCA_fake_script)()
+local function MCZA_fake_script() -- a_4.SetColor 
+	local script = Instance.new('LocalScript', a_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(255, 78, 78)
+			end
+		end
+	end)
+end
+coroutine.wrap(MCZA_fake_script)()
+local function SRTER_fake_script() -- b_4.SetColor 
+	local script = Instance.new('LocalScript', b_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(255, 170, 127)
+			end
+		end
+	end)
+end
+coroutine.wrap(SRTER_fake_script)()
+local function ICCPJG_fake_script() -- c_4.SetColor 
+	local script = Instance.new('LocalScript', c_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(255, 255, 127)
+			end
+		end
+	end)
+end
+coroutine.wrap(ICCPJG_fake_script)()
+local function QHCDI_fake_script() -- d_4.SetColor 
+	local script = Instance.new('LocalScript', d_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(85, 170, 255)
+			end
+		end
+	end)
+end
+coroutine.wrap(QHCDI_fake_script)()
+local function UXSZJ_fake_script() -- e_4.SetColor 
+	local script = Instance.new('LocalScript', e_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(170, 255, 127)
+			end
+		end
+	end)
+end
+coroutine.wrap(UXSZJ_fake_script)()
+local function XQEBI_fake_script() -- a_5.SetColor 
+	local script = Instance.new('LocalScript', a_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(0, 0, 0)
+			end
+		end
+	end)
+end
+coroutine.wrap(XQEBI_fake_script)()
+local function TTXD_fake_script() -- b_5.SetColor 
+	local script = Instance.new('LocalScript', b_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(24, 24, 24)
+			end
+		end
+	end)
+end
+coroutine.wrap(TTXD_fake_script)()
+local function LTDSDR_fake_script() -- c_5.SetColor 
+	local script = Instance.new('LocalScript', c_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(49, 49, 49)
+			end
+		end
+	end)
+end
+coroutine.wrap(LTDSDR_fake_script)()
+local function OQIWGIA_fake_script() -- d_5.SetColor 
+	local script = Instance.new('LocalScript', d_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(63, 63, 63)
+			end
+		end
+	end)
+end
+coroutine.wrap(OQIWGIA_fake_script)()
+local function JHZU_fake_script() -- e_5.SetColor 
+	local script = Instance.new('LocalScript', e_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.Parent.Parent:GetDescendants()) do
+		if	v:IsA("TextBox") or v:IsA("TextLabel") or v:IsA("TextButton") then
+				v.TextColor3 = Color3.fromRGB(107, 107, 107)
+			end
+		end
+	end)
+end
+coroutine.wrap(JHZU_fake_script)()
