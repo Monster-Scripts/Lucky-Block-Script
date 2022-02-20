@@ -1,0 +1,408 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Haxx = Instance.new("ScreenGui")
+local Hax = Instance.new("Frame")
+local Img = Instance.new("ImageLabel")
+local Close = Instance.new("TextButton")
+local DiamondBlock = Instance.new("TextButton")
+local Settings = Instance.new("TextButton")
+local GalaxyBlock = Instance.new("TextButton")
+local RainbowBlock = Instance.new("TextButton")
+local SuperBlock = Instance.new("TextButton")
+local LuckBlock = Instance.new("TextButton")
+local MadeBy = Instance.new("TextLabel")
+local Game = Instance.new("TextLabel")
+local Settings_2 = Instance.new("Frame")
+local Img_2 = Instance.new("ImageLabel")
+local ID = Instance.new("TextBox")
+local ThemeID = Instance.new("TextBox")
+local ThemeButton = Instance.new("TextButton")
+local TransparencyButton = Instance.new("TextButton")
+local Hover = Instance.new("TextLabel")
+local Img_3 = Instance.new("ImageLabel")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+Haxx.Name = "Haxx"
+Haxx.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Haxx.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Haxx.ResetOnSpawn = false
+
+Hax.Name = "Hax"
+Hax.Parent = Haxx
+Hax.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Hax.BackgroundTransparency = 0.400
+Hax.BorderColor3 = Color3.fromRGB(60, 60, 60)
+Hax.Position = UDim2.new(0.0103578158, 0, 0.244532809, 0)
+Hax.Size = UDim2.new(0, 371, 0, 324)
+
+Img.Name = "Img"
+Img.Parent = Hax
+Img.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Img.BackgroundTransparency = 1.000
+Img.Size = UDim2.new(0, 371, 0, 324)
+Img.Image = "rbxassetid://0"
+
+Close.Name = "Close"
+Close.Parent = Img
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.938005388, 0, 0, 0)
+Close.Size = UDim2.new(0, 23, 0, 28)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+DiamondBlock.Name = "Diamond Block"
+DiamondBlock.Parent = Img
+DiamondBlock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DiamondBlock.BackgroundTransparency = 1.000
+DiamondBlock.Position = UDim2.new(0, 0, 7.4505806e-09, 0)
+DiamondBlock.Size = UDim2.new(0, 155, 0, 50)
+DiamondBlock.Font = Enum.Font.SourceSans
+DiamondBlock.Text = "..."
+DiamondBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+DiamondBlock.TextScaled = true
+DiamondBlock.TextSize = 14.000
+DiamondBlock.TextWrapped = true
+
+Settings.Name = "Settings"
+Settings.Parent = Img
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.Position = UDim2.new(0.770889461, 0, 0.901234567, 0)
+Settings.Size = UDim2.new(0, 85, 0, 32)
+Settings.Font = Enum.Font.SourceSans
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextScaled = true
+Settings.TextSize = 14.000
+Settings.TextWrapped = true
+
+GalaxyBlock.Name = "Galaxy Block"
+GalaxyBlock.Parent = Img
+GalaxyBlock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GalaxyBlock.BackgroundTransparency = 1.000
+GalaxyBlock.Position = UDim2.new(0, 0, 0.206790119, 0)
+GalaxyBlock.Size = UDim2.new(0, 155, 0, 50)
+GalaxyBlock.Font = Enum.Font.SourceSans
+GalaxyBlock.Text = "..."
+GalaxyBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+GalaxyBlock.TextScaled = true
+GalaxyBlock.TextSize = 14.000
+GalaxyBlock.TextWrapped = true
+
+RainbowBlock.Name = "Rainbow Block"
+RainbowBlock.Parent = Img
+RainbowBlock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RainbowBlock.BackgroundTransparency = 1.000
+RainbowBlock.Position = UDim2.new(0.452830195, 0, 0, 0)
+RainbowBlock.Size = UDim2.new(0, 155, 0, 50)
+RainbowBlock.Font = Enum.Font.SourceSans
+RainbowBlock.Text = "..."
+RainbowBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+RainbowBlock.TextScaled = true
+RainbowBlock.TextSize = 14.000
+RainbowBlock.TextWrapped = true
+
+SuperBlock.Name = "Super Block"
+SuperBlock.Parent = Img
+SuperBlock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SuperBlock.BackgroundTransparency = 1.000
+SuperBlock.Position = UDim2.new(0.452830195, 0, 0.206790119, 0)
+SuperBlock.Size = UDim2.new(0, 155, 0, 50)
+SuperBlock.Font = Enum.Font.SourceSans
+SuperBlock.Text = "..."
+SuperBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+SuperBlock.TextScaled = true
+SuperBlock.TextSize = 14.000
+SuperBlock.TextWrapped = true
+
+LuckBlock.Name = "Luck Block"
+LuckBlock.Parent = Img
+LuckBlock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LuckBlock.BackgroundTransparency = 1.000
+LuckBlock.Position = UDim2.new(0, 0, 0.422839493, 0)
+LuckBlock.Size = UDim2.new(0, 155, 0, 50)
+LuckBlock.Font = Enum.Font.SourceSans
+LuckBlock.Text = "..."
+LuckBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+LuckBlock.TextScaled = true
+LuckBlock.TextSize = 14.000
+LuckBlock.TextWrapped = true
+
+MadeBy.Name = "MadeBy"
+MadeBy.Parent = Img
+MadeBy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MadeBy.BackgroundTransparency = 1.000
+MadeBy.Position = UDim2.new(0.0215633418, 0, 0.827160478, 0)
+MadeBy.Size = UDim2.new(0, 200, 0, 50)
+MadeBy.Font = Enum.Font.SourceSans
+MadeBy.Text = "Made By : LoveBaconsIneedBacon"
+MadeBy.TextColor3 = Color3.fromRGB(255, 255, 2554)
+MadeBy.TextScaled = true
+MadeBy.TextSize = 14.000
+MadeBy.TextWrapped = true
+
+Game.Name = "Game"
+Game.Parent = Img
+Game.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game.BackgroundTransparency = 1.000
+Game.Position = UDim2.new(0.0215633418, 0, 0.672839522, 0)
+Game.Size = UDim2.new(0, 200, 0, 50)
+Game.Font = Enum.Font.SourceSans
+Game.Text = "Script : Lucky Block Game"
+Game.TextColor3 = Color3.fromRGB(255, 255, 2554)
+Game.TextScaled = true
+Game.TextSize = 14.000
+Game.TextWrapped = true
+
+Settings_2.Name = "Settings"
+Settings_2.Parent = Hax
+Settings_2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Settings_2.BackgroundTransparency = 0.300
+Settings_2.BorderColor3 = Color3.fromRGB(59, 59, 59)
+Settings_2.Position = UDim2.new(1.04043126, 0, 0, 0)
+Settings_2.Size = UDim2.new(0, 420, 0, 200)
+Settings_2.Visible = false
+
+Img_2.Name = "Img"
+Img_2.Parent = Settings_2
+Img_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Img_2.BackgroundTransparency = 1.000
+Img_2.Size = UDim2.new(0, 419, 0, 200)
+Img_2.Image = "rbxassetid://0"
+
+ID.Name = "ID"
+ID.Parent = Img_2
+ID.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ID.BackgroundTransparency = 1.000
+ID.Size = UDim2.new(0, 202, 0, 50)
+ID.Font = Enum.Font.SourceSans
+ID.Text = "Enter Here Gui Transparency"
+ID.TextColor3 = Color3.fromRGB(255, 255, 255)
+ID.TextScaled = true
+ID.TextSize = 14.000
+ID.TextWrapped = true
+
+ThemeID.Name = "ThemeID"
+ThemeID.Parent = Img_2
+ThemeID.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ThemeID.BackgroundTransparency = 1.000
+ThemeID.Position = UDim2.new(0.52371043, 0, 0, 0)
+ThemeID.Size = UDim2.new(0, 200, 0, 53)
+ThemeID.Font = Enum.Font.SourceSans
+ThemeID.Text = "Enter Here Decal ID"
+ThemeID.TextColor3 = Color3.fromRGB(255, 255, 255)
+ThemeID.TextScaled = true
+ThemeID.TextSize = 14.000
+ThemeID.TextWrapped = true
+
+ThemeButton.Name = "ThemeButton"
+ThemeButton.Parent = Img_2
+ThemeButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ThemeButton.BackgroundTransparency = 1.000
+ThemeButton.Position = UDim2.new(0.523710489, 0, 0.375, 0)
+ThemeButton.Size = UDim2.new(0, 200, 0, 50)
+ThemeButton.Font = Enum.Font.SourceSans
+ThemeButton.Text = "Set Theme"
+ThemeButton.TextColor3 = Color3.fromRGB(255, 255, 5255)
+ThemeButton.TextScaled = true
+ThemeButton.TextSize = 14.000
+ThemeButton.TextWrapped = true
+
+TransparencyButton.Name = "TransparencyButton"
+TransparencyButton.Parent = Img_2
+TransparencyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TransparencyButton.BackgroundTransparency = 1.000
+TransparencyButton.Position = UDim2.new(0.00990098994, 0, 0.375, 0)
+TransparencyButton.Size = UDim2.new(0, 200, 0, 50)
+TransparencyButton.Font = Enum.Font.SourceSans
+TransparencyButton.Text = "Set Transparency"
+TransparencyButton.TextColor3 = Color3.fromRGB(255, 255, 5255)
+TransparencyButton.TextScaled = true
+TransparencyButton.TextSize = 14.000
+TransparencyButton.TextWrapped = true
+
+Hover.Name = "Hover"
+Hover.Parent = Haxx
+Hover.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Hover.BackgroundTransparency = 1.000
+Hover.BorderSizePixel = 0
+Hover.Size = UDim2.new(0, 0, 0, 15)
+Hover.Font = Enum.Font.ArialBold
+Hover.Text = ""
+Hover.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hover.TextSize = 14.000
+Hover.TextStrokeTransparency = 0.000
+
+Img_3.Name = "Img"
+Img_3.Parent = Haxx
+Img_3.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Img_3.BackgroundTransparency = 0.400
+Img_3.BorderColor3 = Color3.fromRGB(60, 60, 60)
+Img_3.Position = UDim2.new(0, 0, 0.91848892, 0)
+Img_3.Size = UDim2.new(0, 107, 0, 35)
+Img_3.Visible = false
+Img_3.Image = "rbxassetid://4"
+
+Open.Name = "Open"
+Open.Parent = Img_3
+Open.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Open.BackgroundTransparency = 1.000
+Open.BorderColor3 = Color3.fromRGB(59, 59, 59)
+Open.Position = UDim2.new(0, 0, -0.0243681669, 0)
+Open.Size = UDim2.new(0, 107, 0, 35)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open Haxx"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+-- Scripts:
+
+local function XAETTB_fake_script() -- Hax.LocalScript 
+	local script = Instance.new('LocalScript', Hax)
+
+	local Plr = game.Players.LocalPlayer
+	local Mouse = Plr:GetMouse()
+	local C = script.Parent
+	local Ho = script.Parent.Parent.Hover
+	--[[
+	C.MouseEnter:connect(function(x, y) Ho.Text = "Click to begin a new animation" Ho.Size = UDim2.new(0, Ho.TextBounds.X, 0, 15) Ho.Position = UDim2.new(0, Mouse.X+10, 0, Mouse.Y) Ho.Visible = true end)
+	C.MouseMoved:connect(function(x, y) Ho.Position = UDim2.new(0, Mouse.X+10, 0, Mouse.Y) end)
+	C.MouseLeave:connect(function(x, y) Ho.Text = "" Ho.Visible = false end)
+	]]
+	
+end
+coroutine.wrap(XAETTB_fake_script)()
+local function ADTDEU_fake_script() -- Hax.DragGui 
+	local script = Instance.new('LocalScript', Hax)
+
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+end
+coroutine.wrap(ADTDEU_fake_script)()
+local function AUQWZJT_fake_script() -- Close.Open/Close 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.Img.Visible = true
+	end)
+	
+	script.Parent.Parent.Parent.Parent.Img.Open.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Img.Visible = false
+		script.Parent.Parent.Parent.Visible = true
+	end)
+end
+coroutine.wrap(AUQWZJT_fake_script)()
+local function NUYSJV_fake_script() -- DiamondBlock.FireServer 
+	local script = Instance.new('LocalScript', DiamondBlock)
+
+	local lp = game.Players.LocalPlayer
+	local RS = game:GetService("ReplicatedStorage")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		RS.SpawnDiamondBlock:FireServer(lp)
+	end)
+	
+	script.Parent.Text = ""..script.Parent.Name..""
+end
+coroutine.wrap(NUYSJV_fake_script)()
+local function TKRND_fake_script() -- Settings.Open/Close 
+	local script = Instance.new('LocalScript', Settings)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if	script.Parent.Parent.Parent.Settings.Visible == true then
+			script.Parent.Parent.Parent.Settings.Visible = false
+		else
+			script.Parent.Parent.Parent.Settings.Visible = true
+		end
+	end)
+end
+coroutine.wrap(TKRND_fake_script)()
+local function JMQNBV_fake_script() -- GalaxyBlock.FireServer 
+	local script = Instance.new('LocalScript', GalaxyBlock)
+
+	local lp = game.Players.LocalPlayer
+	local RS = game:GetService("ReplicatedStorage")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		RS.SpawnGalaxyBlock:FireServer(lp)
+	end)
+	
+	script.Parent.Text = ""..script.Parent.Name..""
+end
+coroutine.wrap(JMQNBV_fake_script)()
+local function BUWE_fake_script() -- RainbowBlock.FireServer 
+	local script = Instance.new('LocalScript', RainbowBlock)
+
+	local lp = game.Players.LocalPlayer
+	local RS = game:GetService("ReplicatedStorage")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		RS.SpawnRainbowBlock:FireServer(lp)
+	end)
+	
+	script.Parent.Text = ""..script.Parent.Name..""
+end
+coroutine.wrap(BUWE_fake_script)()
+local function RTOYD_fake_script() -- SuperBlock.FireServer 
+	local script = Instance.new('LocalScript', SuperBlock)
+
+	local lp = game.Players.LocalPlayer
+	local RS = game:GetService("ReplicatedStorage")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		RS.SpawnSuperBlock:FireServer(lp)
+	end)
+	
+	script.Parent.Text = ""..script.Parent.Name..""
+end
+coroutine.wrap(RTOYD_fake_script)()
+local function VHSHGB_fake_script() -- LuckBlock.FireServer 
+	local script = Instance.new('LocalScript', LuckBlock)
+
+	local lp = game.Players.LocalPlayer
+	local RS = game:GetService("ReplicatedStorage")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		RS.SpawnLuckyBlock:FireServer(lp)
+	end)
+	
+	script.Parent.Text = ""..script.Parent.Name..""
+end
+coroutine.wrap(VHSHGB_fake_script)()
+local function DPRTKV_fake_script() -- ThemeButton.ThemeScript 
+	local script = Instance.new('LocalScript', ThemeButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Img.Image = "https://www.roblox.com/asset-thumbnail/image?assetId="..script.Parent.Parent.ThemeID.Text.."&width=420&height=420&format=png"
+		script.Parent.Parent.Parent.Parent.Settings.Img.Image = "https://www.roblox.com/asset-thumbnail/image?assetId="..script.Parent.Parent.ThemeID.Text.."&width=420&height=420&format=png"
+		script.Parent.Parent.Parent.Parent.Parent.Img.Image = "https://www.roblox.com/asset-thumbnail/image?assetId="..script.Parent.Parent.ThemeID.Text.."&width=420&height=420&format=png"
+	end)
+end
+coroutine.wrap(DPRTKV_fake_script)()
+local function UBKSK_fake_script() -- TransparencyButton.TransparencyScript 
+	local script = Instance.new('LocalScript', TransparencyButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Img.ImageTransparency = ""..script.Parent.Parent.ID.Text..""
+		script.Parent.Parent.Parent.Parent.Transparency = ""..script.Parent.Parent.ID.Text..""
+		script.Parent.Parent.Parent.Parent.Settings.Transparency = ""..script.Parent.Parent.ID.Text..""
+		script.Parent.Parent.ImageTransparency = ""..script.Parent.Parent.ID.Text..""
+		script.Parent.Parent.Parent.Parent.Parent.Img.ImageTransparency = ""..script.Parent.Parent.ID.Text..""
+		script.Parent.Parent.Parent.Parent.Parent.Img.BackgroundTransparency = ""..script.Parent.Parent.ID.Text..""
+		script.Parent.Parent.Parent.Parent.Parent.Img.Open.BackgroundTransparency = ""..script.Parent.Parent.ID.Text..""
+	end)
+end
+coroutine.wrap(UBKSK_fake_script)()
